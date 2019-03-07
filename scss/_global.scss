@@ -1,0 +1,137 @@
+// Global styling for this template
+
+body {
+  @include body-font;
+  padding-top: 54px;
+  color: $gray-600;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-800;
+}
+::selection{
+  background-color: lighten($primary, 48%);
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.5rem;
+}
+
+.social-icons {
+  a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $gray-700;
+    color: $white !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    i{
+      content: ''
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $primary;
+      &.github{
+        background-color: #000000;
+      }
+      &.linkedin{
+        background-color: #0077B5;
+      }
+    }
+
+  }
+}
+
+.dev-icons {
+  font-size: 3rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+      &.fa-react{
+        color: rgb(128, 216, 247);
+      }
+      &.fa-html5{
+        color: rgb(211, 89, 84);
+      }
+      &.fa-css3-alt{
+        color: rgb(44, 112, 179);
+      }
+      &.fa-js-square{
+        color: rgb(242, 222, 79);
+      }
+      &.fa-python{
+        color: rgb(69, 155, 187);
+      }
+      &.fa-java{
+        color: rgb(236, 156, 63);
+      }
+      &.fa-github{
+        color: #000000;
+      }
+      &.fa-git{
+        color: rgb(223, 91, 64);
+      }
+    }
+  }
+}
+.btn-primary{
+  background-color: $primary;
+  border-color: $primary;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  &:hover{
+    background-color: lighten($primary, 15%);
+    border-color: lighten($primary, 15%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  &:not(.disabled):active:not(:disabled):active, &:not(:disabled).active{
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
