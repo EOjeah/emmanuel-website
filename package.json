@@ -1,32 +1,29 @@
 {
     "title": "Resume",
-    "name": "startbootstrap-resume",
+    "name": "emmanuelojeah-cv",
     "version": "5.0.4",
     "scripts": {
-        "start": "gulp watch"
+        "start": "gulp watch",
+        "build": "gulp build",
+        "deploy": "npm run build && firebase deploy"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "Emmanuel Ojeah's personal website",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+      
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://www.emmanuelojeah.xyz",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/eojeah/emmanuel-website/issues",
+        "email": "ojeahemmanuel@outlook.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Emmanuel Ojeah",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Emmanuel Ojeah (https://www.emmanuelojeah.xyz/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/eojeah/emmanuel-website.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
