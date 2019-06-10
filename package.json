@@ -8,9 +8,7 @@
         "deploy": "npm run build && firebase deploy"
     },
     "description": "Emmanuel Ojeah's personal website",
-    "keywords": [
-      
-    ],
+    "keywords": [],
     "homepage": "https://www.emmanuelojeah.xyz",
     "bugs": {
         "url": "https://github.com/eojeah/emmanuel-website/issues",
@@ -28,11 +26,12 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
         "bootstrap": "4.3.1",
-        "jquery": "3.3.1",
-        "jquery.easing": "^1.4.1"
+        "jquery": "^3.4.1",
+        "jquery.easing": "^1.4.1",
+        "tar": "^4.4.8"
     },
     "devDependencies": {
-        "browser-sync": "2.26.3",
+        "browser-sync": "^2.26.7",
         "del": "^3.0.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
